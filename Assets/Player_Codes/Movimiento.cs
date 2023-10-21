@@ -21,19 +21,15 @@ public class PlayerControler : MonoBehaviour
             gameObject.transform.Translate(10f * Time.deltaTime,0,0);
             
         }
-        
 
         if (Input.GetKey("up")){
             gameObject.transform.Translate(0,10f* Time.deltaTime,0,0);
             
         }
+
         if(Input.GetKey("down")){
             gameObject.transform.Translate(0,-10f * Time.deltaTime,0,0);
-        }
+        }       
 
-
-       
-
-        
     }      
 }
