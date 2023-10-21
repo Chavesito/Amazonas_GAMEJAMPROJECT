@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
-    
+    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
