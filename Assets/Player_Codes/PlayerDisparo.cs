@@ -6,6 +6,8 @@ public class PlayerDisparo : MonoBehaviour
 {
     [SerializeField] private Transform ContenedorDisparo;
     [SerializeField] private GameObject bala;
+    [SerializeField] private GameObject puñete;
+    private bool golpeando;
     void Update()
     {
         ApuntarConRaton();
@@ -13,6 +15,12 @@ public class PlayerDisparo : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Disparar();
+        } else if (Input.GetButtonDown("Fire2"))
+        {
+            if (!golpeando)
+            {
+                StartCoroutine(Atacar());
+            }
         }
     }
 
@@ -28,5 +36,15 @@ public class PlayerDisparo : MonoBehaviour
     private void Disparar()
     {
         Instantiate(bala, ContenedorDisparo.position, ContenedorDisparo.rotation);
+    }
+
+    private IEnumerator Atacar()
+    {
+        golpeando = true;
+
+        GameObject newGolpe = Instantiate(puñete, ContenedorDisparo.position, ContenedorDisparo.rotation);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(newGolpe);
+        golpeando = false;
     }
 }
