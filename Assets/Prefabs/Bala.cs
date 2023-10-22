@@ -6,6 +6,7 @@ public class Bala : MonoBehaviour
 {
     public int cantidadDeDaño = 10;
     public float velocidad = 2f;
+    public float intensidad = 1.0f;
 
     void Start(){
         Destroy(gameObject, 1);
@@ -17,7 +18,11 @@ public class Bala : MonoBehaviour
 
     void Mover()
     {
-        transform.Translate(Vector2.right * velocidad * Time.deltaTime);
+        transform.Translate(Vector2.right * velocidad * Time.deltaTime*intensidad);
+    }
+     public void ModificarIntensidad(float nuevaIntensidad)
+    {
+        intensidad = nuevaIntensidad;
     }
 
     ///void OnTriggerEnter2D(Collider2D other)
