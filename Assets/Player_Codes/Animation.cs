@@ -15,25 +15,28 @@ public class Animation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKey("a")){
+        if (Input.GetKey("w")){
+            animator.SetBool("Movimiento",true);
+            animator.SetInteger("DIRECCION",8);
+        }
+        else if(Input.GetKey("s")){
+            animator.SetBool("Movimiento",true);
+            animator.SetInteger("DIRECCION",2);
+        
+        }
+       else if(Input.GetKey("a")){
             animator.SetBool("Movimiento",true);
             animator.SetInteger("DIRECCION",4);
         }
         else if(Input.GetKey("d")){
             animator.SetBool("Movimiento",true);
             animator.SetInteger("DIRECCION",6);
-        }
-        else if (Input.GetKey("w")){
-            animator.SetBool("Movimiento",true);;
-            animator.SetInteger("DIRECCION",8);
-        }
-        else if(Input.GetKey("s")){
-            animator.SetBool("Movimiento",true);
-            animator.SetInteger("DIRECCION",2);
+        
+        
         }else{
             animator.SetBool("Movimiento",false);
         }
         
+     }
         
-    }
 }

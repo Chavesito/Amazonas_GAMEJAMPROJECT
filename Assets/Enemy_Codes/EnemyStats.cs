@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public int VidaMaxima=100;
+    
     private int Vida;
     // Start is called before the first frame update
     void Start()
     {
-        Vida = VidaMaxima;
+        Vida = 100;
     }
 
     // Update is called once per frame
@@ -22,12 +22,12 @@ public void RecibirDaño(int daño)
     {
         
 
-        Vida = Vida - daño;
+        Vida -= daño;
         if (Vida <= 0){
             Morir();
         }
 
-        Debug.Log(Vida);
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
