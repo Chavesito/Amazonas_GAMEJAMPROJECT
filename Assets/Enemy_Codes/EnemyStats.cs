@@ -32,6 +32,7 @@ public void RecibirDaño(int daño)
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.CompareTag("Bala"))
         {
             Bala bala = other.GetComponent<Bala>();
