@@ -119,6 +119,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -315,7 +341,7 @@ TextureImporter:
       name: Pro_MovimientoMasPalo_9
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -462,7 +488,7 @@ TextureImporter:
       name: Pro_MovimientoMasPalo_16
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 32
         width: 32
         height: 32
@@ -567,7 +593,7 @@ TextureImporter:
       name: Pro_MovimientoMasPalo_21
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 0
         width: 32
         height: 32
