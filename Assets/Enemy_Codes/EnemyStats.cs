@@ -18,7 +18,7 @@ public class EnemyStats : MonoBehaviour
       
     }
 
-    void RecibirDaño(int daño)
+public void RecibirDaño(int daño)
     {
         
 
