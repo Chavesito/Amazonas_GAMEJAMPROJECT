@@ -36,8 +36,12 @@ public class Animation : MonoBehaviour
             animator.SetInteger("DIRECCION",6);
         
         
+        }else if(playerDisparo.cargandoDisparo){
+            animator.SetBool("Movimiento",false);
+            animator.SetBool("Apuntado", true);
         }else{
             animator.SetBool("Movimiento",false);
+            animator.SetBool("Apuntado", false);
         }
         
      }
