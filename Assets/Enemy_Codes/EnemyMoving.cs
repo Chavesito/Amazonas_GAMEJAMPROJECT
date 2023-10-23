@@ -25,7 +25,7 @@ public class EnemyMoving : MonoBehaviour
 
     void MoverHaciaJugador()
     {
-        Vector3 direccion = (jugador.position - transform.position).normalized;
+        Vector2 direccion = (jugador.position - transform.position).normalized;
         transform.Translate(direccion * velocidad * Time.deltaTime, Space.World);
         rb.velocity = direccion;
     }
